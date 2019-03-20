@@ -1,0 +1,31 @@
+{
+    "short_name": "Restaurants",
+    "name": "MWS Restaurant Reviews Project",
+    "icons": [
+        {
+            "src": "icons/Restaurants Reviews-48x48-1x.jpg",
+            "type": "image/jpg",
+            "sizes": "48x48"
+        },
+        {
+            "src": "icons/Restaurants Reviews-96x96-2x.jpg",
+            "type": "image/jpg",
+            "sizes": "96x96"
+        },
+        {
+            "src": "icons/iRestaurants Reviews-192x192-3x.jpg",
+            "type": "image/jpg",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icons/Restaurants Reviews-512x512-4x.jpg",
+            "type": "image/jpg",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "index.ejs",
+    "theme_color": "#33353d",
+    "background_color": "#fdfdfd",
+    "display": "standalone"
+}
+

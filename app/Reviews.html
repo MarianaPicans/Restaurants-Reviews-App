@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize.css for better cross-browser consistency -->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Restaurant Review</title>
+    <meta charset="utf-8" />
+    
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+      h10 {
+        font-size: 30px;
+        color:chocolate;
+        margin-left: 35px;
+      }
+    select {
+    	background-color: #eaeaea; 
+        border:1px solid #bfbfbf; 
+        color: #565656;
+        padding: 8px; 
+        max-width: 60px;
+        margin-bottom: 20px;
+    }
+    
+    option:hover {
+		background-color:cornflowerblue;
+	}
+  textarea {
+    min-height: 150px;
+    resize: vertical;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: none;
+  }
+  button {
+    max-width: 120px;
+    margin-bottom: 30px;
+    background-color: blue;
+    color: azure;
+    border: none;
+    height: 35px;
+    border-radius: 3px;
+  }
+  input {
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: none;
+  }
+  input.date {
+    width: 30%;
+    border-radius: 3px; 
+    border: none;
+  }
+  
+</style>
+
+</head>
+
+<body class="inside">
+  <!-- Beginning header -->
+  <header>
+    <!-- Beginning nav -->
+    <nav>
+      <h1><a href="/">Restaurant Reviews</a></h1>
+    </nav>
+    <!-- Beginning breadcrumb -->
+    <ul id="breadcrumb" aria-label="Breadcrumb" >
+      <li><a href="/">Home</a></li>
+    </ul>
+    <!-- End breadcrumb -->
+    <!-- End nav -->
+  </header>
+  <!-- End header -->
+
+  <!-- Beginning main -->
+  <main id="maincontent">
+
+    <!-- Beginning restaurant -->
+    <section id="restaurant-container">
+      <h1 id="restaurant-name" tabindex="0"></h1>
+      <p id="restaurant-address" tabindex="0" style="text-align: left"></p>
+      <img id="restaurant-img">
+      </section>
+
+      <h10>Review Form: </h10>
+      <br>
+      <section>
+        <form id="review_form">
+          Name:<br>
+          <input type="text" name="first_last_name" id ="name" placeholder="Name"><br>
+          Date:<br>
+          <input class="date" type="date" name="date" id ="date" placeholder="Date"><br>
+          Rating:<br>
+          <Select id = "rating">
+            <option value= "1">1</option> 
+            <option value= "2">2</option> 
+            <option value= "3">3</option> 
+            <option value= "4">4</option> 
+            <option value= "5">5</option> 
+          </Select>
+          Comments:<b></b>
+          <textarea id = "comments" placeholder="Comments"></textarea>
+          <button id="submit_button">Submit</button>
+        </form> 
+      </section>
+      <script type="application/javascript" charset="utf-8" src="js/reviews.js"></script>
+      <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+      <script type="application/javascript" charset="utf-8" src="js/restaurant_info.js"></script>
+      <script>
+        window.initMap();
+      </script>
+      </main>
+      </body>
+      </html>
+
+      
