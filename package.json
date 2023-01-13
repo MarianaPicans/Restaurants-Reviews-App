@@ -27,7 +27,7 @@
     "run-sequence": "^2.2.1",
     "vinyl-source-stream": "^2.0.0",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.1.2",
+    "webpack-cli": "^3.3.12",
     "wiredep": "^4.0.0"
   },
   "dependencies": {
